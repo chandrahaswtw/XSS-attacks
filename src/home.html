@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>XSS ATTACK EXAMPLE</h2>
+    <h3>ADD IMAGE URLS</h3>
+    <form action="">
+        <label for="">XSS PRONE</label>
+        <input type="text" id="errorProne" autocomplete="off">
+        <button id="btn1" onclick="add1(event)">ADD</button>
+    </form>
+    <br>
+    <form action="" onsubmit="form2(event)">
+        <label for="">XSS FREE</label>
+        <input type="text" id="errorFree" autocomplete="off">
+        <button id="btn2" onclick="add2(event)">ADD</button>
+    </form>
+    <ul></ul>
+</body>
+
+</html>
